@@ -1,15 +1,17 @@
-package com.assignment.hoppersreceipt;
+package com.assignment.hoppersreceipt.packeges;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+
 
 @Controller
 public class HomeController {
 	@RequestMapping("/")
     public String index(Model model) {
-        
+ 
         String name = "Grace Hopper";
         String itemName = "Copper wire";
         double price = 5.25;
@@ -22,9 +24,8 @@ public class HomeController {
         model.addAttribute("price",price);
         model.addAttribute("description",description);
         model.addAttribute("vendor",vendor);
-        
-    
-        return "index.jsp";
+
+		return "index.jsp";
     }
 	
 
