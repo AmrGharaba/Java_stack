@@ -31,7 +31,7 @@
             <form class="quest" action="/quest" method="post">
  
                 <h2>Cave</h2>
-                <p>Earns ( 10 - 20 ) Gold Coins</p>
+                <p>Earns ( 5 - 10 ) Gold Coins</p>
                 <input type="submit" name="Cave" id="button" value="Find Gold">
                 <input type="hidden" name="whichForm" value="cave">
             </form>
@@ -39,7 +39,7 @@
             <form class="quest" action="/quest" method="post">
 
                 <h2>House</h2>
-                <p>Earns ( 10 - 20 ) Gold Coins</p>
+                <p>Earns ( 2 - 5 ) Gold Coins</p>
                 <input type="submit" name="House" id="button" value="Find Gold">
                 <input type="hidden" name="whichForm" value="house">
             </form>
@@ -58,9 +58,11 @@
             <h2>activities:</h2>
             <div>
             <c:forEach var="message" items="${log}">
+
             
             <p><c:out value="${message}"></c:out></p>
             
+
             </c:forEach>
             </div>
 
